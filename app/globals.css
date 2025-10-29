@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
-@config "../tailwind.config.js";
+/** @config "../tailwind.config.js";
 
-/** :root {
+ :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -25,4 +25,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 20px;
+  border: 1px solid rgb(231, 231, 231);
+  width: 100%;
+  border-radius: 10px;
 }
