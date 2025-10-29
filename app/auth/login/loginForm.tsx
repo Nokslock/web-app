@@ -1,4 +1,6 @@
 import AuthButton from "@/components/AuthButton";
+import Link from "next/link";
+
 export default function LoginForm() {
   return (
     <>
@@ -12,7 +14,7 @@ export default function LoginForm() {
           />
         </div>
 
-        <div  className="pb-5">
+        <div className="pb-5">
           <label className="block text-sm font-bold text-gray-500">
             Password
           </label>
@@ -24,7 +26,9 @@ export default function LoginForm() {
         </div>
 
         <div className="pb-5">
-            <p className="text-md text-end text-blue-400">Forgot Password?</p>
+          <p className="text-md text-end text-blue-400">
+            <Link href="/auth/forgot-password">Forgot Password?</Link>
+          </p>
         </div>
 
         <div>

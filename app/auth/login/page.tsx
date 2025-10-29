@@ -32,9 +32,9 @@ export default function LoginPage() {
             </div>
             <div className="px-25">
               <LoginForm />
-              <p className="text-center ">or continue with</p>
+              <p className="text-center pb-8">or continue with</p>
 
-              <div className="grid grid-cols-2">
+              <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-6 pb-10">
                 <div>
                   <LoginApple />
                 </div>
@@ -44,7 +44,7 @@ export default function LoginPage() {
               </div>
               
 
-              <p className="text-center ">Don't have an Account? &nbsp;  
+              <p className="text-center pb-10 ">Don't have an Account? &nbsp;  
 
                 <Link href="/auth/register" className="text-blue-400">
                    Register
@@ -53,7 +53,7 @@ export default function LoginPage() {
             </div>
 
             <div className="grid grid-cols-2 ">
-              <div className="text-start">
+              <div className="text-start font-bold">
                 &copy; Nockslock 2025
               </div>
               <div className="text-end">
