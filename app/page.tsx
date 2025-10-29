@@ -5,8 +5,12 @@ export default function Home() {
      <>
       <div>Home Page</div>
                 <Link href="auth/login">
-            <button>Login</button>
-          </Link>
+                  <button>Login</button>
+                </Link>
+
+                <Link href="auth/register">
+                  <button>Register</button>
+                </Link>
     </>
   );
 }

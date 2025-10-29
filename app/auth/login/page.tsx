@@ -4,6 +4,7 @@ import LoginForm from "./loginForm";
 import Image from "next/image";
 import Logo from "@/public/logo.svg";
 import BgImg from "@/public/login-bg-img.png";
+import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -31,6 +32,33 @@ export default function LoginPage() {
             </div>
             <div className="px-25">
               <LoginForm />
+              <p className="text-center ">or continue with</p>
+
+              <div className="grid grid-cols-2">
+                <div>
+                  <LoginApple />
+                </div>
+                <div>
+                  <LoginGoogle />
+                </div>
+              </div>
+              
+
+              <p className="text-center ">Don't have an Account? &nbsp;  
+
+                <Link href="/auth/register" className="text-blue-400">
+                   Register
+                  </Link>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 ">
+              <div className="text-start">
+                &copy; Nockslock 2025
+              </div>
+              <div className="text-end">
+                <p className="text-blue-400">Privacy Policy</p>
+              </div>
             </div>
             
           </div>

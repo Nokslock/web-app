@@ -2,7 +2,7 @@ import AuthButton from "@/components/AuthButton";
 export default function LoginForm() {
   return (
     <>
-      <form action="">
+      <form action="" className="pb-10">
         <div className="pb-5">
           <label className="block text-sm font-bold text-gray-500">Email</label>
           <input
