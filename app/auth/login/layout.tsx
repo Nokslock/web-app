@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../../globals.css";
+import Image from "next/image";
+import BgImg from "@/public/login-bg-img.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Nockslock - Create Account',
+  title: 'Nockslock - Login',
   description: 'Secure your digital assets with Nockslock, the ultimate cold storage solution for cryptocurrencies.',
 };
 
@@ -27,7 +29,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="container mx-auto p-20">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="col-span-1">
+                  {children}
+              </div>
+              <div className="col-span-1">
+                <Image
+                  src={BgImg}
+                  alt="A description of my hero image"
+                  className="max-h-full"
+                />
+              </div>
+            </div>
+        </div>
+        
       </body>
     </html>
   );

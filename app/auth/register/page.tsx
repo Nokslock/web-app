@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/logo.svg";
-import RegisterApple from "./registerApple";
-import RegisterGoogle from "./registerGoogle";
-import RegisterForm from "./registerForm";
+import RegisterApple from "./actions/registerApple";
+import RegisterGoogle from "./actions/registerGoogle";
+import RegisterForm from "./actions/registerForm";
 
 export default function RegisterPage() {
     return (

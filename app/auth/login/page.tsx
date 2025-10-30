@@ -1,6 +1,6 @@
-import LoginGoogle from "./loginGoogle";
-import LoginApple from "./loginApple";
-import LoginForm from "./loginForm";
+import LoginGoogle from "./actions/loginGoogle";
+import LoginApple from "./actions/loginApple";
+import LoginForm from "./actions/loginForm";
 import Image from "next/image";
 import Logo from "@/public/logo.svg";
 import BgImg from "@/public/login-bg-img.png";
@@ -9,9 +9,6 @@ import Link from "next/link";
 export default function LoginPage() {
   return (
     <>
-      <div className="container mx-auto p-20">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="col-span-1">
             <div className="pb-30">
               <Image
               src={Logo}
@@ -60,17 +57,6 @@ export default function LoginPage() {
                 <p className="text-blue-400">Privacy Policy</p>
               </div>
             </div>
-            
-          </div>
-          <div className="col-span-1">
-            <Image
-              src={BgImg}
-              alt="A description of my hero image"
-              className="max-h-full"
-            />
-          </div>
-        </div>
-      </div>
     </>
   );
 }
