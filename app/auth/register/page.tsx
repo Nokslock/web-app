@@ -6,34 +6,29 @@ import RegisterGoogle from "./actions/registerGoogle";
 import RegisterForm from "./actions/registerForm";
 
 export default function RegisterPage() {
-    return (
-        <>
-            <div className="container mx-auto">
-                <div className="grid grid-cols-2 gap-4">
-                              <div className="col-span-1">
-            <div className="pb-30">
+  return (
+    <>
+            <div className="pb-20">
               <Image
-              src={Logo}
-              alt="A description of my hero image"
-              width={150}
-              height={60}
-            />
+                src={Logo}
+                alt="A description of my hero image"
+                width={200}
+              />
             </div>
-            
-            <div className="text-center px-20">
-              <p className="lg:text-5xl md:text-4xl font-bold">Welcome Back</p>
-              
-                <p className="text-lg text-center break-all font-thin py-5 ">
-                  Log in to a simpler, more secure online experience.<br /> Your
-                  digital world, protected and organized.
-                </p>
+
+            <div className="text-center px-15">
+              <p className="lg:text-5xl md:text-4xl font-bold">Join Us</p>
+
+              <p className="text-lg text-center break-all font-thin py-5 ">
+                Create your account to unlock a more secure, organized digital life. <br />Your personal space, simplified and protected.
                 
+              </p>
             </div>
             <div className="px-25">
               <RegisterForm />
               <p className="text-center pb-8">or continue with</p>
 
-              <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-6 pb-10">
+              <div className="grid lg:grid-cols-1 md:grid-cols-1 gap-2 pb-10">
                 <div>
                   <RegisterApple />
                 </div>
@@ -41,28 +36,21 @@ export default function RegisterPage() {
                   <RegisterGoogle />
                 </div>
               </div>
-              
 
-              <p className="text-center pb-10 ">Don't have an Account? &nbsp;  
-
-                <Link href="/auth/register" className="text-blue-400">
-                   Register
-                  </Link>
+              <p className="text-center pb-10 ">
+                Already have an Account? &nbsp;
+                <Link href="/auth/login" className="text-blue-400">
+                  Login
+                </Link>
               </p>
             </div>
 
             <div className="grid grid-cols-2 ">
-              <div className="text-start font-bold">
-                &copy; Nockslock 2025
-              </div>
+              <div className="text-start font-bold">&copy; Nockslock 2025</div>
               <div className="text-end">
                 <p className="text-blue-400">Privacy Policy</p>
               </div>
             </div>
-            
-          </div>
-                </div>
-            </div>
-        </>
-    )
+    </>
+  );
 }

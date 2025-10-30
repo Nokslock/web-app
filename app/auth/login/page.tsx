@@ -9,12 +9,12 @@ import Link from "next/link";
 export default function LoginPage() {
   return (
     <>
-            <div className="pb-30">
+            <div className="pb-20">
               <Image
               src={Logo}
               alt="A description of my hero image"
-              width={150}
-              height={60}
+              width={200}
+              height={100}
             />
             </div>
             

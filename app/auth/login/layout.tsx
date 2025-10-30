@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "@/public/logo.svg",
+  },
   title: 'Nockslock - Login',
   description: 'Secure your digital assets with Nockslock, the ultimate cold storage solution for cryptocurrencies.',
 };
@@ -30,7 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="container mx-auto p-20">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-10">
               <div className="col-span-1">
                   {children}
               </div>
