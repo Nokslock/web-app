@@ -1,4 +1,5 @@
 import AuthButton from "@/components/AuthButton";
+import Link from "next/link";
 
 export default function RegisterForm() {
     return (
@@ -13,7 +14,10 @@ export default function RegisterForm() {
                         className="mt-1 w-full px-4 p-2  h-13 rounded-md border border-gray-200 bg-white text-sm text-gray-700"
                     />
                 </div>
-                <AuthButton type="register" loading={false} />
+                <Link href="/auth/register/bio-data/">
+                    <AuthButton type="register" loading={false} />
+                </Link>
+                
                 </form>
         </>
     );

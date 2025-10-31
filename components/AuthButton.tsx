@@ -1,7 +1,7 @@
 import React from "react";
 
 interface AuthButtonProps {
-  type: "login" | "register" | "reset-pwd" | "forgot-pwd";
+  type: "login" | "register" | "reset-pwd" | "forgot-pwd" | "next" | "submit" | "Verify";
   loading?: boolean;
 }
 
@@ -11,7 +11,9 @@ const AuthButton: React.FC<AuthButtonProps> = ({ type, loading }) => {
     register: "Create Account",
     "reset-pwd": "Reset Password",
     "forgot-pwd": "Send Reset Link",
-    
+    "next": "Next",
+    "submit": "Submit",
+    "Verify": "Verify",
   };
 
   const label = labelMap[type];
@@ -19,7 +21,7 @@ const AuthButton: React.FC<AuthButtonProps> = ({ type, loading }) => {
   return (
     <>
       <button
-        className={`pri-btn w-full py-2 rounded-md transition-all ${
+        className={`bg-blue-400 text-lg text-white w-full py-2 rounded-md transition-all ${
           loading ? "opacity-70 cursor-not-allowed" : ""
         }`}
         disabled={loading}

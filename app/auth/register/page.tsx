@@ -7,14 +7,7 @@ import RegisterForm from "./actions/registerForm";
 
 export default function RegisterPage() {
   return (
-    <>
-            <div className="pb-20">
-              <Image
-                src={Logo}
-                alt="A description of my hero image"
-                width={200}
-              />
-            </div>
+    <> 
 
             <div className="text-center px-15">
               <p className="lg:text-5xl md:text-4xl font-bold">Join Us</p>
