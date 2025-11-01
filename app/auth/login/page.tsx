@@ -9,15 +9,6 @@ import Link from "next/link";
 export default function LoginPage() {
   return (
     <>
-            <div className="pb-20">
-              <Image
-              src={Logo}
-              alt="A description of my hero image"
-              width={200}
-              height={100}
-            />
-            </div>
-            
             <div className="text-center px-20">
               <p className="lg:text-5xl md:text-4xl font-bold">Welcome Back</p>
               
