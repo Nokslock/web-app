@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../../globals.css";
 import Image from "next/image";
 import BgImg from "@/public/login-bg-img.png";
-import Logo from "@/public/logo.svg";
+
+import HomeLogo from "@/components/HomeLogo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,9 +38,8 @@ export default function RootLayout({
             <div className="grid grid-cols-2 gap-10">
               <div className="col-span-1">
                 <div className="pb-15">
-                <Image src={Logo} alt="A description of my hero image" width={200} />
-              </div>
-                  {children}
+                  <HomeLogo />
+                </div>{children}
               </div>
               <div className="col-span-1">
                 <Image

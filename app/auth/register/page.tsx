@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/logo.svg";
 import RegisterApple from "./actions/registerApple";
 import RegisterGoogle from "./actions/registerGoogle";
 import RegisterForm from "./actions/registerForm";
