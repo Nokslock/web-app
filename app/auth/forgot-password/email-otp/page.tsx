@@ -165,7 +165,7 @@ export default function EmailOtpVerification() {
                 </label>
                 <input
                   // Assign the ref element to our ref array
-                 // ref={(el) => (inpRefs.current[i] = el)}
+                  ref={(el) => (inpRefs.current[i] = el)}
                   onFocus={() => setActiveInput(i)}
                   onBlur={() => setActiveInput(-1)}
                   onKeyDown={(e) => handleKeyDown(e, i)}
