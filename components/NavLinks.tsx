@@ -1,7 +1,7 @@
 export default function NavLinks() {
     return (
         <>
-            Links
+            Navigation Links
         </>
     )
 }
