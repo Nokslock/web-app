@@ -1,7 +1,18 @@
 import React from "react";
 
 interface AuthButtonProps {
-  type: "login" | "register" | "reset-pwd" | "forgot-pwd" | "next" | "submit" | "Verify";
+  type:
+    | "login"
+    | "register"
+    | "reset-pwd"
+    | "forgot-pwd"
+    | "next"
+    | "submit"
+    | "Verify"
+    | "authenticate"
+    | "create"
+    | "get-started"
+    | "get-the-app";
   loading?: boolean;
 }
 
@@ -14,14 +25,37 @@ const AuthButton: React.FC<AuthButtonProps> = ({ type, loading }) => {
     "next": "Next",
     "submit": "Submit",
     "Verify": "Verify",
+    "authenticate": "Log In",
+    "create": "Create Account",
+    "get-started": "Get Started",
+    "get-the-app": "Get the App",
   };
+
+  const styleMap: Record<AuthButtonProps["type"], string> = {
+    login: "bg-blue-400 text-white hover:bg-blue-600",
+    register: "bg-blue-400 text-white hover:bg-blue-600",
+    "reset-pwd": "bg-blue-400 text-white hover:bg-blue-600",
+    "forgot-pwd": "bg-blue-400 text-white hover:bg-blue-600",
+    "next": "bg-blue-400 text-white hover:bg-blue-600",
+    "submit": "bg-blue-400 text-white hover:bg-blue-600",
+    "Verify": "bg-blue-400 text-white hover:bg-blue-600",
+    "authenticate": "bg-blue-400 text-white hover:bg-blue-600",
+    "create": "text-blue-400 border-1 border-solid border-blue-400 hover:bg-blue-300 hover:text-white hover:border-blue-300",
+    "get-started": "bg-blue-400 text-white hover:bg-blue-600",
+    "get-the-app": "bg-gray-800 text-white hover:bg-gray-900",
+  };
+
+  const baseStyles = "text-lg w-full py-2 rounded-md transition-all";
 
   const label = labelMap[type];
 
   return (
     <>
       <button
-        className={`bg-blue-400 text-lg text-white w-full py-2 rounded-md transition-all ${
+        className={`
+          ${baseStyles}
+          ${styleMap[type]}
+          ${
           loading ? "opacity-70 cursor-not-allowed" : ""
         }`}
         disabled={loading}

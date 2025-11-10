@@ -1,14 +1,14 @@
 import React from "react";
 
 interface ButtonProps {
-  type: "login" | "register" | "get-started" | "get-the-app";
+  type: "authenticate" | "create" | "get-started" | "get-the-app";
   loading?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({ type, loading }) => {
   const labelMap: Record<ButtonProps["type"], string> = {
-    login: "Log In",
-    register: "Create Account",
+    authenticate: "Log In",
+    create: "Create Account",
     "get-started": "Get Started",
     "get-the-app": "Get the App",
   };

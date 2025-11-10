@@ -3,7 +3,7 @@ import Image from "next/image";
 import BgImg from "@/public/hero-img.png";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
-import Button from "@/components/Button";
+import AuthButton from "@/components/AuthButton";
 import LandingOne from "@/components/LandingOne";
 
 export default function Home() {
@@ -22,10 +22,10 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-2 gap-10 pe-90">
               <div>
-                <Button type="get-started" />
+                <AuthButton type="get-started" />
               </div>
               <div>
-                <Button type="get-the-app" />
+                <AuthButton type="get-the-app" />
               </div>
               
             </div>

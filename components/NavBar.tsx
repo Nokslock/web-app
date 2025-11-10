@@ -1,6 +1,6 @@
 import HomeLogo from "@/components/HomeLogo";
 import NavLinks from "@/components/NavLinks";
-import Button from "./Button";
+import AuthButton from "@/components/AuthButton";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -19,12 +19,12 @@ export default function NavBar() {
               <div className="grid lg:grid-cols-2 gap-10">
                 <div>
                   <Link href="/auth/login">
-                    <Button type="register" />
+                    <AuthButton type="create" />
                   </Link>
                 </div>
                 <div>
                   <Link href="/auth/register">
-                    <Button type="login" />
+                    <AuthButton type="authenticate" />
                   </Link>
                 </div>
               </div>
