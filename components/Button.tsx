@@ -1,24 +1,37 @@
 import React from "react";
 
 interface ButtonProps {
-    type:  "login" | "register";
-    loading?: boolean;
+  type: "login" | "register" | "get-started" | "get-the-app";
+  loading?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({ type, loading }) => {
   const labelMap: Record<ButtonProps["type"], string> = {
     login: "Log In",
-    register: "Create Account"
+    register: "Create Account",
+    "get-started": "Get Started",
+    "get-the-app": "Get the App",
   };
 
-    const label = labelMap[type];
+  const styleMap: Record<ButtonProps["type"], string> = {
+    login: "bg-blue-400 text-white hover:bg-blue-600",
+    register: "text-blue-400 border-1 border-solid border-blue-400 hover:bg-blue-300 hover:text-white hover:border-blue-300",
+    "get-started": "bg-blue-400 text-white hover:bg-blue-600",
+    "get-the-app": "bg-gray-800 text-white hover:bg-gray-900",
+  };
 
-      return (
+  const baseStyles = "text-lg w-full py-2 rounded-md transition-all";
+
+  const label = labelMap[type];
+
+  return (
     <>
-      <button
-        className={`bg-blue-400 text-lg text-white w-full py-2 rounded-md transition-all ${
-          loading ? "opacity-70 cursor-not-allowed" : ""
-        }`}
+      <button 
+        className={`
+          ${baseStyles} 
+          ${styleMap[type]} 
+          ${loading ? "opacity-70 cursor-not-allowed" : ""}
+        `}
         disabled={loading}
       >
         {loading ? (

@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <>
-      <nav>
-        <div className="conatiner mx-auto p-4">
+      <nav className="absolute inset-x-0 top-0">
+        <div className="conatiner mx-auto lg:px-40 py-5">
           <div className="grid grid-cols-8 ">
             <div className="col-span-2">
               <HomeLogo />
@@ -16,15 +16,15 @@ export default function NavBar() {
               <NavLinks />
             </div>
             <div className="col-span-2">
-              <div className="grid lg:grid-cols-2">
+              <div className="grid lg:grid-cols-2 gap-10">
                 <div>
                   <Link href="/auth/login">
-                    <Button type="login" />
+                    <Button type="register" />
                   </Link>
                 </div>
                 <div>
                   <Link href="/auth/register">
-                    <Button type="register" />
+                    <Button type="login" />
                   </Link>
                 </div>
               </div>
