@@ -5,11 +5,11 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import AuthButton from "@/components/AuthButton";
 import LandingOne from "@/components/LandingOne";
-
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-    <NavBar />
+      <NavBar />
       <div className="w-screen mx-auto lg:px-50 lg:pt-53 lg:pb-20 hero-section">
         <div className="grid grid-cols-2 gap-10">
           <div className="self-center">
@@ -17,17 +17,20 @@ export default function Home() {
               Take Full Control of your Digital Security
             </p>
             <p className="text-2xl font-thin pb-10">
-              Log in to a simpler, more secure online experience.<br /> Your digital
-              world, protected and organized.
+              Log in to a simpler, more secure online experience.
+              <br /> Your digital world, protected and organized.
             </p>
             <div className="grid grid-cols-2 gap-10 pe-90">
               <div>
-                <AuthButton type="get-started" />
+                <AuthButton variant="primary" type="button">
+                  Get Started
+                </AuthButton>
               </div>
               <div>
-                <AuthButton type="get-the-app" />
+                <AuthButton variant="dark" type="button">
+                  Get the App
+                </AuthButton>
               </div>
-              
             </div>
           </div>
           <div className="justify-items-end">
@@ -40,6 +43,7 @@ export default function Home() {
         </div>
       </div>
       <LandingOne />
+      <Footer />
     </>
   );
 }

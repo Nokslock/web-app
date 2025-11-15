@@ -18,13 +18,23 @@ export default function NavBar() {
             <div className="col-span-2">
               <div className="grid lg:grid-cols-2 gap-10">
                 <div>
-                  <Link href="/auth/login">
-                    <AuthButton type="create" />
+                  <Link href="/auth/register">
+                    <AuthButton
+                      variant="outline"
+                      type="button"
+                    >
+                      Create Account
+                    </AuthButton>
                   </Link>
                 </div>
                 <div>
-                  <Link href="/auth/register">
-                    <AuthButton type="authenticate" />
+                  <Link href="/auth/login">
+                    <AuthButton
+                      variant="primary"
+                      type="button"
+                    >
+                      Login
+                    </AuthButton>
                   </Link>
                 </div>
               </div>

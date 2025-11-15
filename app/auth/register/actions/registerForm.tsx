@@ -15,7 +15,9 @@ export default function RegisterForm() {
                     />
                 </div>
                 <Link href="/auth/register/bio-data/">
-                    <AuthButton type="register" loading={false} />
+                    <AuthButton variant="primary" type="button">
+            Create Account
+          </AuthButton>
                 </Link>
                 
                 </form>

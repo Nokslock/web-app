@@ -33,7 +33,12 @@ export default function LoginForm() {
 
         <div>
           <Link href="/auth/login/email-otp">
-            <AuthButton type="login" loading={false} />
+            <AuthButton
+                      variant="primary"
+                      type="button"
+                    >
+                     Login
+                    </AuthButton>
           </Link>
         </div>
       </form>

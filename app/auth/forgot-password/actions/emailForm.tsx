@@ -15,7 +15,12 @@ export default function EmailForm() {
         </div>
         
          <Link href="/auth/forgot-password/email-otp">
-          <AuthButton type="reset-pwd" loading={false} />
+          <AuthButton
+                      variant="primary"
+                      type="button"
+                    >
+                      Reset Password
+                    </AuthButton>
         </Link>
        
 

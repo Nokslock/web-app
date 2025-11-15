@@ -9,7 +9,7 @@ export default function EmailOtpVerification() {
   return (
     <>
       <div className="pb-3">
-        <Link href="/auth/forgot-password/">
+        <Link href="/auth/login/">
           <div className="px-5 flex items-center gap-2 text-blue-400 text-lg font-medium">
             <FaAngleLeft /> Back
           </div>
@@ -45,7 +45,9 @@ export default function EmailOtpVerification() {
               </div>
           </div>
 
-          <AuthButton type="Verify" loading={false} />
+          <AuthButton variant="disabled" type="button">
+            Verify OTP
+          </AuthButton>
         </form>
       </div>
     </>

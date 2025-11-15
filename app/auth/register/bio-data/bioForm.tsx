@@ -39,7 +39,9 @@ export default function BioForm() {
                     />
                 </div>
                 <Link href="/auth/register/email-otp/">
-                    <AuthButton type="next" loading={false} />
+                    <AuthButton variant="primary" type="button">
+            Next
+          </AuthButton>
                 </Link>
                 
                 </form>

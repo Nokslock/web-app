@@ -7,7 +7,7 @@ const LoginApple = () => {
 
   const handleAppleLogin = () => {
     startTransition(() => {
-      // Simulate Apple login process
+      // Simulate Apple login process 
       setTimeout(() => {
         alert("Logged in with Apple!");
       }, 1000);

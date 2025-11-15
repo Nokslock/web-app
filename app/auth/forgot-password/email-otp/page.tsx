@@ -3,9 +3,7 @@ import AuthButton from "@/components/AuthButton";
 import Link from "next/link";
 import { FaAngleLeft } from "react-icons/fa6";
 
-
 export default function EmailOtpVerification() {
-
   return (
     <>
       <div className="pb-3">
@@ -24,28 +22,23 @@ export default function EmailOtpVerification() {
       </p>
       <div className="px-20">
         <form>
-          <div
-            className="flex pb-10 pt-10 space-x-10 md:space-x-4 justify-center"
-          >
-              <div
-                className="w-12 h-12 md:w-14 md:h-14 relative rounded-lg overflow-hidden shadow-sm"
-              >
-                <label
-                  className="absolute flex justify-center items-center text-2xl top-0 left-0 w-full h-full rounded-lg
+          <div className="flex pb-10 pt-10 space-x-10 md:space-x-4 justify-center">
+            <div className="w-12 h-12 md:w-14 md:h-14 relative rounded-lg overflow-hidden shadow-sm">
+              <label
+                className="absolute flex justify-center items-center text-2xl top-0 left-0 w-full h-full rounded-lg
                      transition-all duration-200 ease-in-out"
-                     
-                >
-                </label>
-                <input
-                  
-                  className="absolute  top-0 left-0 w-full h-full text-center text-2xl font-semibold 
+              ></label>
+              <input
+                className="absolute  top-0 left-0 w-full h-full text-center text-2xl font-semibold 
                              text-transparent bg-transparent border-none outline-none 
-                             caret-blue-500" 
-                />
-              </div>
+                             caret-blue-500"
+              />
+            </div>
           </div>
 
-          <AuthButton type="Verify" loading={false} />
+          <AuthButton variant="disabled" type="button">
+            Verify OTP
+          </AuthButton>
         </form>
       </div>
     </>
