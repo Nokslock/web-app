@@ -4,7 +4,7 @@ import Logo from "@/public/logo.svg";
 
 export default function HomeLogo() {
   return (
-    <div>
+    <div className="pb-10">
       <Link href="/">
         <Image src={Logo} alt="Nockslock Logo" width={200} />
       </Link>

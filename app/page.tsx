@@ -10,23 +10,18 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="w-screen mx-auto lg:px-50 lg:pt-53 lg:pb-20 hero-section">
-        <div className="grid grid-cols-2 gap-10">
+      <div className="w-screen mx-auto px-50 pt-53 pb-20 md:px-25 md:pt-25 md:pb-10  hero-section">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 ">
           <div className="self-center">
-            <p className="text-7xl font-black pb-10">
+            <p className="lg:text-6xl md:text-3xl font-black pb-10 md:pb-5">
               Take Full Control of your Digital Security
             </p>
-            <p className="text-2xl font-thin pb-10">
+            <p className="lg:text-2xl md:text-base font-thin pb-10 md:pb-5">
               Log in to a simpler, more secure online experience.
               <br /> Your digital world, protected and organized.
             </p>
-            <div className="grid grid-cols-2 gap-10 pe-90">
-              <div>
-                <AuthButton variant="primary" type="button">
-                  Get Started
-                </AuthButton>
-              </div>
-              <div>
+            <div className="grid grid-cols-3">
+              <div className="md:col-span-2">
                 <AuthButton variant="dark" type="button">
                   Get the App
                 </AuthButton>

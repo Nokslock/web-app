@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Block from "@/public/block.png";
 import landingOneImage from "../public/demo-img.png";
 
 export default function LandingOne() {
   return (
     <>
-      <div className="conatiner mx-auto text-center lg:px-140 py-10 text-center">
+      <div className="conatiner mx-auto text-center lg:px-50 md:px-20 py-10 text-center">
         <p className="subscript font-bold pb-5">More Security</p>
-        <p className="text-7xl font-bold pb-5">
+        <p className="lg:text-7xl md:text-5xl font-bold pb-5">
           Take Full Control of Your <span>Digital Security</span>
         </p>
         <p className="text-2xl font-base ">
@@ -22,20 +23,20 @@ export default function LandingOne() {
           className="img-fluid"
         />
       </div>
-      <div className="container mx-auto">
-        <div className="grid lg:grid-cols-3 text-center">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
+      <div className="section mx-auto mt-20">
+        <div className="grid grid-cols-3 gap-5 text-center">
+          <div><Image src={Block} alt="default"/></div>
+          <div><Image src={Block} alt="default"/></div>
+          <div><Image src={Block} alt="default"/></div>
+          <div><Image src={Block} alt="default"/></div>
+          <div><Image src={Block} alt="default"/></div>
+          <div><Image src={Block} alt="default"/></div>
         </div>
       </div>
 
-      <div className="conatiner mx-auto text-start ps-50 pe-250 py-10 text-center">
+      <div className="conatiner mx-auto text-center lg:px-50 md:px-20 py-10 text-center">
         <p className="subscript font-bold pb-5">More Security</p>
-        <p className="text-7xl font-bold pb-5">
+        <p className="lg:text-7xl md:text-5xl font-bold pb-5">
           Take Full Control of Your <span>Digital Security</span>
         </p>
         <p className="text-2xl font-base ">
@@ -44,16 +45,16 @@ export default function LandingOne() {
         </p>
       </div>
 
-      <div className="container mx-auto">
-        <div className="grid lg:grid-cols-4 text-center">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+      <div className="container mx-auto px-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10 text-center">
+          <div><Image src={Block} alt="default"/></div>
+          <div><Image src={Block} alt="default"/></div>
+          <div><Image src={Block} alt="default"/></div>
+          <div><Image src={Block} alt="default"/></div>
         </div>
       </div>
 
-      <div className="w-screen h-screen mx-auto lg:px-50 lg:pt-53 lg:pb-20 bottom-banner">
+      <div className="w-screen h-screen mx-auto lg:px-50 lg:pt-53 lg:pb-20 bottom-banner mt-10">
             <div className="grid grid-cols-2">
           <div className="self-center">
             <p className="text-6xl text-white font-black pb-10">
