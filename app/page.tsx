@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="w-screen mx-auto px-50 pt-53 pb-20 md:px-25 md:pt-25 md:pb-10  hero-section">
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 ">
-          <div className="self-center">
-            <p className="lg:text-6xl md:text-3xl font-black pb-10 md:pb-5">
+      <div className="w-screen mx-auto lg:px-2  0 lg:pt-33 lg:pb-20 md:px-15 md:pt-25 md:pb-10 px-5 pt-20 pb-5  hero-section">
+        <div className="grid lg:grid-cols-2 md:grid-cols-3 sm:grid-cols-1 gap-10 ">
+          <div className="lg:col-span-1 md:col-span-2 self-center">
+            <p className="lg:text-6xl md:text-3xl text-2xl font-black lg:pb-10 md:pb-5 p-2">
               Take Full Control of your Digital Security
             </p>
             <p className="lg:text-2xl md:text-base font-thin pb-10 md:pb-5">
@@ -21,14 +21,14 @@ export default function Home() {
               <br /> Your digital world, protected and organized.
             </p>
             <div className="grid grid-cols-3">
-              <div className="md:col-span-2">
+              <div className="md:col-span-1 lg:col-span-1 col-span-2">
                 <AuthButton variant="dark" type="button">
                   Get the App
                 </AuthButton>
               </div>
             </div>
           </div>
-          <div className="justify-items-end">
+          <div className="flex justify-end">
             <Image
               src={BgImg}
               alt="A description of my hero image"

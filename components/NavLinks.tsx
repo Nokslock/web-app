@@ -1,21 +1,16 @@
-'use client';
+"use client";
 
-import { TbLayoutDashboardFilled } from "react-icons/tb";
-import { IoSettingsSharp } from "react-icons/io5";
-import { BsFillShieldFill } from "react-icons/bs";
-
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const links = [
-  { name: 'Dashboard', href: '/dashboard', icon: TbLayoutDashboardFilled },
+  { name: "About", href: "#" },
   {
-    name: 'Vaults',
-    href: '/dashboard/invoices',
-    icon: BsFillShieldFill,
+    name: "Features",
+    href: "#",
   },
-  { name: 'Settings', href: '/dashboard/customers', icon: IoSettingsSharp },
+  { name: "Download", href: "#" },
 ];
 
 export default function NavLinks() {
@@ -25,20 +20,18 @@ export default function NavLinks() {
     // 1. PARENT CONTAINER: flex-row makes the items sit side-by-side
     <div className="flex w-full flex-row gap-2">
       {links.map((link) => {
-        const LinkIcon = link.icon;
         return (
           <Link
             key={link.name}
             href={link.href}
             // 2. LINK ITEMS: 'grow' ensures they fill the width evenly on smaller screens
             className={clsx(
-              'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
+              "flex h-[48px] grow items-center justify-center gap-2 rounded-md p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3",
               {
-                'bg-sky-100 text-blue-600': pathname === link.href,
-              },
+                "bg-sky-100 text-blue-600": pathname === link.href,
+              }
             )}
           >
-            <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
           </Link>
         );

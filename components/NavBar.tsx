@@ -7,25 +7,18 @@ export default function NavBar() {
   return (
     <>
       <nav className="absolute inset-x-0 top-0">
-        <div className="conatiner mx-auto lg:px-40 py-5">
+        <div className="conatiner mx-auto lg:px-20 py-5">
           <div className="grid grid-cols-8 ">
             <div className="col-span-2">
               <HomeLogo />
             </div>
-            <div className="col-span-4 text-center">
+            <div className="col-span-4">
               <NavLinks />
             </div>
             <div className="col-span-2">
-              <div className="grid lg:grid-cols-2 gap-10">
+              <div className="grid lg:grid-cols-2 gap-5">
                 <div>
-                  <Link href="/auth/register">
-                    <AuthButton
-                      variant="outline"
-                      type="button"
-                    >
-                      Create Account
-                    </AuthButton>
-                  </Link>
+                    
                 </div>
                 <div>
                   <Link href="/auth/login">
